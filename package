@@ -1,0 +1,15 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+    Book book = new Book ("Sienkiewicz", "Potop");
+        Book book1 = new Book ("Mickiewicz", "Dziady");
+        System.out.println(book);
+
+        BookReader bookReader = new BookReader("Kapeć");
+        bookReader.borrowBook(book);
+        bookReader.borrowBook(book1);
+        System.out.println(bookReader);
+    }
+}
